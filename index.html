@@ -3,57 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mutahar Safdar – PhD Candidate</title>
+  <title>Mutahar Safdar – Academic Profile</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px auto; max-width: 800px; line-height: 1.6; color: #333; }
-    header { text-align: center; margin-bottom: 40px; }
-    header h1 { font-size: 2.5em; margin: 0; }
-    header p.role { font-size: 1.2em; color: #555; margin: 5px 0; }
-    nav a { margin: 0 10px; text-decoration: none; color: #0066cc; }
-    section { margin-bottom: 40px; }
-    section h2 { border-bottom: 2px solid #0066cc; padding-bottom: 5px; color: #0066cc; }
-    ul { list-style-type: disc; padding-left: 20px; }
-    footer { text-align: center; margin-top: 60px; color: #777; font-size: 0.9em; }
+    /* Base Reset */
+    * { margin:0; padding:0; box-sizing: border-box; }
+    body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #f9f9f9; color: #333; }
+    a { text-decoration: none; color: #007acc; }
+
+    /* Header */
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e1e1e1;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+    }
+    .profile img {
+      width: 80px; height: 80px; border-radius: 50%; margin-right: 20px; object-fit: cover;
+    }
+    header h1 { font-size: 2em; color: #222; }
+    header p { margin-top: 4px; color: #555; }
+
+    /* Navigation Tabs */
+    nav { background: #007acc; padding: 10px 40px; }
+    nav ul { display: flex; list-style: none; }
+    nav li { margin-right: 20px; }
+    nav a {
+      color: #fff; font-weight: bold; padding: 8px 0; position: relative;
+    }
+    nav a.active::after {
+      content: '';
+      position: absolute;
+      bottom: -2px; left: 0; width: 100%; height: 3px; background: #ffdd00;
+    }
+
+    /* Container */
+    .container { max-width: 1000px; margin: 40px auto; background: #fff; padding: 30px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border-radius: 4px; }
+    section { display: none; }
+    section.active { display: block; }
+    section h2 {
+      font-size: 1.8em; margin-bottom: 15px; color: #007acc; border-bottom: 2px solid #ffdd00; padding-bottom: 5px;
+    }
+
+    /* Footer */
+    footer { text-align: center; padding: 20px; font-size: 0.9em; color: #777; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Mutahar Safdar</h1>
-    <p class="role">PhD Candidate in Mechanical Engineering, McGill University</p>
-    <p>Email: <a href="mailto:mutahar.safdar@mail.mcgill.ca">mutahar.safdar@mail.mcgill.ca</a></p>
-    <nav>
+    <div class="profile">
+      <img src="profile.jpg" alt="Mutahar Safdar">
+      <div>
+        <h1>Mutahar Safdar</h1>
+        <p>PhD Candidate, Mechanical Engineering – McGill University</p>
+        <p><a href="mailto:mutahar.safdar@mail.mcgill.ca">mutahar.safdar@mail.mcgill.ca</a></p>
+      </div>
+    </div>
+    <div class="links">
       <a href="https://scholar.google.ca/citations?user=H-C9MGcAAAAJ&hl=en" target="_blank">Google Scholar</a> |
-      <a href="CV_Safdar.pdf" target="_blank">Download CV</a>
-    </nav>
+      <a href="CV_Safdar.pdf" target="_blank">CV</a>
+    </div>
   </header>
 
-  <section id="education">
-    <h2>Education</h2>
-  </section>
+  <nav>
+    <ul>
+      <li><a href="#education" class="tab-link active">Education</a></li>
+      <li><a href="#projects" class="tab-link">Projects</a></li>
+      <li><a href="#publications" class="tab-link">Publications</a></li>
+      <li><a href="#awards" class="tab-link">Honors & Awards</a></li>
+      <li><a href="#software" class="tab-link">Software</a></li>
+      <li><a href="#media" class="tab-link">Media</a></li>
+    </ul>
+  </nav>
 
-  <section id="projects">
-    <h2>Projects</h2>
-  </section>
+  <div class="container">
+    <section id="education" class="active">
+      <h2>Education</h2>
+      <!-- Content to be added -->
+    </section>
 
-  <section id="publications">
-    <h2>Publications</h2>
-    <p>For a full list, see my <a href="https://scholar.google.ca/citations?user=H-C9MGcAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.</p>
-  </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <!-- Content to be added -->
+    </section>
 
-  <section id="awards">
-    <h2>Awards &amp; Honors</h2>
-  </section>
+    <section id="publications">
+      <h2>Publications</h2>
+      <!-- Content to be added -->
+    </section>
 
-  <section id="software">
-    <h2>Software &amp; Tools</h2>
-  </section>
+    <section id="awards">
+      <h2>Honors & Awards</h2>
+      <!-- Content to be added -->
+    </section>
 
-  <section id="media">
-    <h2>Media &amp; Presentations</h2>
-  </section>
+    <section id="software">
+      <h2>Software & Tools</h2>
+      <!-- Content to be added -->
+    </section>
+
+    <section id="media">
+      <h2>Media & Presentations</h2>
+      <!-- Content to be added -->
+    </section>
+  </div>
 
   <footer>
-    <p>&copy; 2025 Mutahar Safdar. All rights reserved.</p>
+    <p>&copy; 2025 Mutahar Safdar. Built with ❤️.</p>
   </footer>
+
+  <script>
+    document.querySelectorAll('.tab-link').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelectorAll('.tab-link').forEach(l => l.classList.remove('active'));
+        document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+        link.classList.add('active');
+        document.querySelector(link.getAttribute('href')).classList.add('active');
+      });
+    });
+  </script>
 </body>
 </html>
