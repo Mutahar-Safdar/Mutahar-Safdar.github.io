@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mutahar Safdar – Academic Profile</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mutahar Safdar – Academic Profile</title>
+<style>
     /* Dark Theme Base */
     * { margin:0; padding:0; box-sizing: border-box; }
     body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #121212; color: #e0e0e0; }
@@ -37,98 +38,99 @@
 
     /* Footer */
     footer { text-align: center; padding: 20px; font-size: 0.9em; color: #777; }
-  </style>
+  
+#toggle-theme {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 8px 14px;
+  background: #ffca28;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 999;
+}
+</style>
 </head>
-<body>
-  <header>
-    <div class="profile">
-      <img src="Photo_Safdar.JPG" alt="Mutahar Safdar">
-      <div>
-        <h1>Mutahar Safdar</h1>
-        <p>PhD Candidate, Mechanical Engineering – McGill University</p>
-        <p><a href="mailto:mutahar.safdar@mail.mcgill.ca">mutahar.safdar@mail.mcgill.ca</a></p>
-      </div>
-    </div>
-    <div class="links">
-      <a href="https://scholar.google.ca/citations?user=H-C9MGcAAAAJ&hl=en" target="_blank">Google Scholar</a>
-      <a href="https://www.linkedin.com/in/mutahar-safdar/" target="_blank">LinkedIn</a>
-      <a href="CV_Safdar.pdf" target="_blank">CV</a>
-    </div>
-  </header>
+<body><button id="toggle-theme">Toggle Theme</button>
+<header>
+<div class="profile">
+<img alt="Mutahar Safdar" src="Photo_Safdar.JPG"/>
+<div>
+<h1>Mutahar Safdar</h1>
+<p>PhD Candidate, Mechanical Engineering – McGill University</p>
+<p><a href="mailto:mutahar.safdar@mail.mcgill.ca">mutahar.safdar@mail.mcgill.ca</a></p>
+</div>
+</div>
+<div class="links">
+<a href="https://scholar.google.ca/citations?user=H-C9MGcAAAAJ&amp;hl=en" target="_blank">Google Scholar</a>
+<a href="https://www.linkedin.com/in/mutahar-safdar/" target="_blank">LinkedIn</a>
+<a href="CV_Safdar.pdf" target="_blank">CV</a>
+</div>
+</header>
+<nav>
+<ul>
+<li><a class="tab-link active" href="#about">About</a></li>
+<li><a class="tab-link" href="#projects">Projects</a></li>
+<li><a class="tab-link" href="#publications">Publications</a></li>
+<li><a class="tab-link" href="#collaborations">Collaborations</a></li>
+<li><a class="tab-link" href="#awards">Honors &amp; Awards</a></li>
+<li><a class="tab-link" href="#software">Software</a></li>
+<li><a class="tab-link" href="#datasets">Datasets</a></li>
+<li><a class="tab-link" href="#media">Media</a></li>
+<li><a class="tab-link" href="#blogs">Blogs</a></li>
+</ul>
+</nav>
+<div class="container">
+<section class="active" id="about">
+<h2>About Me</h2>
+<p style="margin-bottom: 2em;">Welcome to my personal website. I am a 5th year PhD candidate in Mechanical Engineering at McGill University in Montreal, working at the intersection of artificial intelligence, additive manufacturing, and composites. My research focuses on developing AI-based sensing and decision-making tools to support process monitoring, defect detection, and quality evaluation in advanced manufacturing systems. I am supervised by Dr. Yaoyao Fiona Zhao at Additive Design and Manufacturing Laboratory (ADML).</p>
+<p style="margin-bottom: 2em;">My PhD research is also supervised by Dr. Guy Lamouche at Digital Technologies Research Center (DT) of the National Research Council Canada (NRC). AT NRC, I have worked with Dr. Priti Wanjara, Dr. Javad Gholipour, Dr. Christophe Bescond, and Dr. Sheida Sarafan as part of the 3+2 Canada-Germany project Artificial Intelligence Enhancement of Process Sensing for Adaptive Laser Additive Manufacturing (AI-SLAM). In AI-SLAM, I have led the research, development and deployment of AI solutions on production machines with close collaboration of industry and research partners (Apollo-Clad Laser Cladding, Fraunhofer Institute for Laser Techology ILT, NRC, Braintoy AI, BCT GmbH).</p>
+<p style="margin-bottom: 2em;">In addition to AI-SLAM, I have been part of research collaborations with the National Institute of Standards and Technology (NIST, Dr. Yan Lu), Arizona State University (ASU, Dr. Hyunwoong Ko), Nanyang Technological University (NTU, Dr. Seung Ki Moon), and Agency for Science, Technology and Research (A*STAR, Dr. Lequn Chen). These collaborations have broadly explored the applications of transfer learning across manufacturing technologies and sensing modalities to expedite the adoption of data-driven additive manufacutring research.</p>
+<p style="margin-bottom: 2em;">During my PhD, I completed a research exchange at the Helmholtz Association of Germany (Forschungszentrum Jülich) in Aachen under the mentorship of Dr. Stefan Sandfeld, Dr. Bashir Kazimi, and Dr. Karina Ruzaeva. My research at the Materials Data Science and Informatics (IAS-9) group involved investigation of vision transformer models for segmenting additively manufactured microstructures.</p>
+<p style="margin-bottom: 2em;">Prior to attending McGill, I was a full-time researcher at the Korea STEP Center in Daejeon. At K-STEP, I developed a PLM-MES interface to link design information with manufacturing instructions and feedback for highly customized designs with a case study of ship design data from Daewoo Shipbuilding and Marine Engineering (DSME).</p>
+<p style="margin-bottom: 2em;">I completed my MS in Mechanical Engineering at the Korea Advanced Institute of Science and Technology (KAIST) in Daejeon. My master's research focused on geometric and topological analysis for inter-CAD model translation. My MS thesis on persistent identification for parametric CAD data exchange was advised by Dr. Soonhung Han at the Intelligent Computer-Aided Design (iCAD) group. At iCAD, I was also mentored by Dr. Soonjo Kwon.</p>
+<p style="margin-bottom: 2em;">I completed my BS in Mechanical Engineering with honors from the University of Engineering and Technology (UET) in Lahore.</p>
+</section><section id="research"><h2>Research Interests</h2><p>Coming soon!</p></section><section id="education"><h2>Education</h2><p>Coming soon!</p></section>
 
-  <nav>
-    <ul>
-      <li><a href="#about" class="tab-link active">About</a></li>
-      <li><a href="#projects" class="tab-link">Projects</a></li>
-      <li><a href="#publications" class="tab-link">Publications</a></li>
-      <li><a href="#collaborations" class="tab-link">Collaborations</a></li>
-      <li><a href="#awards" class="tab-link">Honors & Awards</a></li>
-      <li><a href="#software" class="tab-link">Software</a></li>
-      <li><a href="#datasets" class="tab-link">Datasets</a></li>
-      <li><a href="#media" class="tab-link">Media</a></li>
-      <li><a href="#blogs" class="tab-link">Blogs</a></li>
-    </ul>
-  </nav>
-
-  <div class="container">
-    <section id="about" class="active">
-      <h2>About Me</h2>
-      <p style="margin-bottom: 2em;">Welcome to my personal website. I am a 5th year PhD candidate in Mechanical Engineering at McGill University in Montreal, working at the intersection of artificial intelligence, additive manufacturing, and composites. My research focuses on developing AI-based sensing and decision-making tools to support process monitoring, defect detection, and quality evaluation in advanced manufacturing systems. I am supervised by Dr. Yaoyao Fiona Zhao at Additive Design and Manufacturing Laboratory (ADML).</p>
-      <p style="margin-bottom: 2em;">My PhD research is also supervised by Dr. Guy Lamouche at Digital Technologies Research Center (DT) of the National Research Council Canada (NRC). AT NRC, I have worked with Dr. Priti Wanjara, Dr. Javad Gholipour, Dr. Christophe Bescond, and Dr. Sheida Sarafan as part of the 3+2 Canada-Germany project Artificial Intelligence Enhancement of Process Sensing for Adaptive Laser Additive Manufacturing (AI-SLAM). In AI-SLAM, I have led the research, development and deployment of AI solutions on production machines with close collaboration of industry and research partners (Apollo-Clad Laser Cladding, Fraunhofer Institute for Laser Techology ILT, NRC, Braintoy AI, BCT GmbH).</p>
-      <p style="margin-bottom: 2em;">In addition to AI-SLAM, I have been part of research collaborations with the National Institute of Standards and Technology (NIST, Dr. Yan Lu), Arizona State University (ASU, Dr. Hyunwoong Ko), Nanyang Technological University (NTU, Dr. Seung Ki Moon), and Agency for Science, Technology and Research (A*STAR, Dr. Lequn Chen). These collaborations have broadly explored the applications of transfer learning across manufacturing technologies and sensing modalities to expedite the adoption of data-driven additive manufacutring research.</p>
-      <p style="margin-bottom: 2em;">During my PhD, I completed a research exchange at the Helmholtz Association of Germany (Forschungszentrum Jülich) in Aachen under the mentorship of Dr. Stefan Sandfeld, Dr. Bashir Kazimi, and Dr. Karina Ruzaeva. My research at the Materials Data Science and Informatics (IAS-9) group involved investigation of vision transformer models for segmenting additively manufactured microstructures.</p>
-      <p style="margin-bottom: 2em;">Prior to attending McGill, I was a full-time researcher at the Korea STEP Center in Daejeon. At K-STEP, I developed a PLM-MES interface to link design information with manufacturing instructions and feedback for highly customized designs with a case study of ship design data from Daewoo Shipbuilding and Marine Engineering (DSME).</p>
-      <p style="margin-bottom: 2em;">I completed my MS in Mechanical Engineering at the Korea Advanced Institute of Science and Technology (KAIST) in Daejeon. My master's research focused on geometric and topological analysis for inter-CAD model translation. My MS thesis on persistent identification for parametric CAD data exchange was advised by Dr. Soonhung Han at the Intelligent Computer-Aided Design (iCAD) group. At iCAD, I was also mentored by Dr. Soonjo Kwon.</p>
-      <p style="margin-bottom: 2em;">I completed my BS in Mechanical Engineering with honors from the University of Engineering and Technology (UET) in Lahore.</p>
-    </section>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <p>Coming soon!</p>
-    </section>
-
-    <section id="publications">
-      <h2>Publications</h2>
-      <p>Coming soon!</p>
-    </section>
-
-    <section id="collaborations">
-      <h2>Collaborations</h2>
-      <p>Coming soon!</p>
-    </section>
-
-    <section id="awards">
-      <h2>Honors & Awards</h2>
-      <p>Coming soon!</p>
-    </section>
-
-    <section id="software">
-      <h2>Software</h2>
-      <p>Coming soon!</p>
-    </section>
-
-    <section id="datasets">
-      <h2>Datasets</h2>
-      <p>Coming soon!</p>
-    </section>
-
-    <section id="media">
-      <h2>Media & Presentations</h2>
-      <p>Coming soon!</p>
-    </section>
-
-    <section id="blogs">
-      <h2>Blogs</h2>
-      <p>Coming soon!</p>
-    </section>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 Mutahar Safdar. Built with ❤️.</p>
-  </footer>
-
-  <script>
+<section id="projects">
+<h2>Projects</h2>
+<p>Coming soon!</p>
+</section>
+<section id="publications">
+<h2>Publications</h2>
+<p>Coming soon!</p>
+</section>
+<section id="collaborations">
+<h2>Collaborations</h2>
+<p>Coming soon!</p>
+</section>
+<section id="awards">
+<h2>Honors &amp; Awards</h2>
+<p>Coming soon!</p>
+</section>
+<section id="software">
+<h2>Software</h2>
+<p>Coming soon!</p>
+</section>
+<section id="datasets">
+<h2>Datasets</h2>
+<p>Coming soon!</p>
+</section>
+<section id="media">
+<h2>Media &amp; Presentations</h2>
+<p>Coming soon!</p>
+</section>
+<section id="blogs">
+<h2>Blogs</h2>
+<p>Coming soon!</p>
+</section>
+</div>
+<footer>
+<p>© 2025 Mutahar Safdar. Built with ❤️.</p>
+</footer>
+<script>
     // Tab switching logic
     document.querySelectorAll('.tab-link').forEach(link => {
       link.addEventListener('click', e => {
@@ -140,5 +142,35 @@
       });
     });
   </script>
-</body>
+<script>
+document.getElementById('toggle-theme').addEventListener('click', function() {
+  document.body.classList.toggle('light-theme');
+});
+
+// Light theme styles (optional, can be enhanced)
+const lightStyles = document.createElement('style');
+lightStyles.innerHTML = `
+  body.light-theme {
+    background: #f4f4f4;
+    color: #222;
+  }
+  body.light-theme header {
+    background: #fff;
+    color: #222;
+  }
+  body.light-theme nav {
+    background: #ddd;
+  }
+  body.light-theme nav a {
+    color: #333;
+  }
+  body.light-theme nav a.active {
+    color: #000;
+  }
+  body.light-theme .container {
+    background: #fff;
+  }
+`;
+document.head.appendChild(lightStyles);
+</script></body>
 </html>
