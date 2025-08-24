@@ -1,126 +1,27 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Mutahar Safdar – Academic Profile</title>
-<style>
-    /* Dark Theme Base */
-    * { margin:0; padding:0; box-sizing: border-box; }
-    body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #121212; color: #e0e0e0; }
-    a { text-decoration: none; color: #4fc3f7; }
-
-    /* Header */
-    header { background: #1e1e1e; border-bottom: 1px solid #333; padding: 20px 40px; display: flex; align-items: center; justify-content: space-between; }
-    .profile { display: flex; align-items: center; }
-    .profile img { width: 80px; height: 80px; border-radius: 50%; margin-right: 20px; object-fit: cover; border: 2px solid #4fc3f7; }
-    header h1 { font-size: 2em; color: #fff; }
-    header p { margin-top: 4px; color: #bbb; }
-
-    /* Links */
-    .links a { margin-left: 15px; font-weight: bold; }
-
-    /* Navigation Tabs */
-    nav { background: #263238; padding: 10px 40px; }
-    nav ul { display: flex; list-style: none; }
-    nav li { margin-right: 20px; }
-    nav a { color: #bbb; font-weight: bold; padding: 8px 0; position: relative; }
-    nav a.active { color: #fff; }
-    nav a.active::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 100%; height: 3px; background: #ffca28; }
-
-    /* Container */
-    .container { max-width: 1000px; margin: 40px auto; padding: 30px; }
-    section { display: none; }
-    section.active { display: block; }
-    section h2 { font-size: 1.8em; margin-bottom: 15px; color: #4fc3f7; border-bottom: 2px solid #ffca28; padding-bottom: 5px; }
-    section p, section ul { color: #ccc; }
-
-    /* Footer */
-    footer { text-align: center; padding: 20px; font-size: 0.9em; color: #777; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutahar Safdar</title>
 </head>
 <body>
-<header>
-<div class="profile">
-<img alt="Mutahar Safdar" src="Photo_Safdar.JPG"/>
-<div>
-<h1>Mutahar Safdar</h1>
-<p>PhD Candidate, Mechanical Engineering – McGill University</p>
-<p><a href="mailto:mutahar.safdar@mail.mcgill.ca">mutahar.safdar@mail.mcgill.ca</a></p>
-</div>
-</div>
-<div class="links">
-<a href="https://scholar.google.ca/citations?user=H-C9MGcAAAAJ&amp;hl=en" target="_blank">Google Scholar</a>
-<a href="https://www.linkedin.com/in/mutahar-safdar/" target="_blank">LinkedIn</a>
-<a href="CV_Safdar.pdf" target="_blank">CV</a>
-</div>
-</header>
-<nav>
-<ul>
-<li><a class="tab-link active" href="#about">About</a></li>
-<li><a class="tab-link" href="#projects">Projects</a></li>
-<li><a class="tab-link" href="#publications">Publications</a></li>
-<li><a class="tab-link" href="#collaborations">Collaborations</a></li>
-<li><a class="tab-link" href="#awards">Honors &amp; Awards</a></li>
-<li><a class="tab-link" href="#software">Software</a></li>
-<li><a class="tab-link" href="#datasets">Datasets</a></li>
-<li><a class="tab-link" href="#media">Media</a></li>
-<li><a class="tab-link" href="#blogs">Blogs</a></li>
-</ul>
-</nav>
-<div class="container">
-<section class="active" id="about">
-<h2>About</h2>
-<p style="margin-bottom: 1em;">Welcome to my personal website. I am a PhD candidate at McGill University working at the intersection of machine learning, additive manufacturing (aka 3D printing) and metal matrix composites. Content coming soon!</p>
-</section>
-<section id="projects">
-<h2>Projects</h2>
-<p>Coming soon!</p>
-</section>
-<section id="publications">
-<h2>Publications</h2>
-<p>Coming soon!</p>
-</section>
-<section id="collaborations">
-<h2>Collaborations</h2>
-<p>Coming soon!</p>
-</section>
-<section id="awards">
-<h2>Honors &amp; Awards</h2>
-<p>Coming soon!</p>
-</section>
-<section id="software">
-<h2>Software</h2>
-<p>Coming soon!</p>
-</section>
-<section id="datasets">
-<h2>Datasets</h2>
-<p>Coming soon!</p>
-</section>
-<section id="media">
-<h2>Media &amp; Presentations</h2>
-<p>Coming soon!</p>
-</section>
-<section id="blogs">
-<h2>Blogs</h2>
-<p>Coming soon!</p>
-</section>
-</div>
-<footer>
-<p>© 2025 Mutahar Safdar. Built with ❤️.</p>
-</footer>
-<script>
-    // Tab switching logic
-    document.querySelectorAll('.tab-link').forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        document.querySelectorAll('.tab-link').forEach(l => l.classList.remove('active'));
-        document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
-        link.classList.add('active');
-        document.querySelector(link.getAttribute('href')).classList.add('active');
-      });
-    });
-  </script>
+    <section id="about">
+        <h2>About</h2>
+        <p>I am a 5th year Ph.D. candidate in Mechanical Engineering at McGill University in Montreal, working at the intersection of artificial intelligence, additive manufacturing, and composites. My research focuses on developing AI-based sensing and decision-making tools to support process monitoring, defect detection, and quality evaluation in advanced manufacturing systems. I am supervised by Dr. Yaoyao Fiona Zhao at Additive Design and Manufacturing Laboratory (ADML).</p>
+
+        <p>My PhD research is also supervised by Dr. Guy Lamouche at the Digital Technologies Research Center (DT) of the National Research Council Canada (NRC). At NRC, I have worked with Dr. Priti Wanjara, Dr. Javad Gholipour, Dr. Christophe Bescond, and Dr. Sheida Sarafan as part of the 3+2 Canada-Germany project Artificial Intelligence Enhancement of Process Sensing for Adaptive Laser Additive Manufacturing (AI-SLAM). In AI-SLAM, I have led the research, development and deployment of AI solutions on production machines with close collaboration of industry and research partners (Apollo-Clad Laser Cladding, Fraunhofer Institute for Laser Technology ILT, NRC, Braintoy AI, BCT GmbH).</p>
+
+        <p>In addition to AI-SLAM, I have been part of research collaborations with the National Institute of Standards and Technology (NIST), Arizona State University (ASU), Nanyang Technological University (NTU), and Agency for Science, Technology and Research (A*STAR). These collaborations have broadly explored the applications of transfer learning to expedite the adoption of data-driven additive manufacturing research.</p>
+
+        <p>During my Ph.D., I completed a research exchange at the Helmholtz Association of Germany (Forschungszentrum Jülich) in Aachen under the mentorship of Dr. Stefan Sandfeld, Dr. Bashir Kazimi, and Dr. Karina Ruzaeva. My research at the Materials Data Science and Informatics (IAS-9) group involved investigation of vision transformer models for segmenting additively manufactured microstructures.</p>
+
+        <p>Prior to attending McGill, I was a full-time researcher at the Korea STEP Center in Daejeon. At K-STEP, I developed a PLM-MES interface to link design information with manufacturing instructions and feedback for highly customized designs with a case study of ship design data from Daewoo Shipbuilding and Marine Engineering (DSME).</p>
+
+        <p>I completed my M.S. in Mechanical Engineering at the Korea Advanced Institute of Science and Technology (KAIST) in Daejeon. My master's research focused on geometric and topological analysis for inter-CAD model translation. My M.S. thesis on persistent identification for parametric CAD data exchange was advised by Dr. Soonung Han at the Intelligent Computer-Aided Design (iCAD) group. At iCAD, I was also mentored by Dr. Soonjo Kwon.</p>
+
+        <p>I completed my B.S. in Mechanical Engineering with honors from the University of Engineering and Technology (UET) in Lahore.</p>
+    </section>
 </body>
 </html>
